@@ -13,11 +13,14 @@ import ChatbotPage from './pages/Chatbot/ChatbotPage';
 import Auth from './pages/Auth/Auth';
 import ChatbotLauncher from './components/ChatbotLauncher/ChatbotLauncher';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
+
 
       <Routes>
         <Route path="/" element={<Home />} />
