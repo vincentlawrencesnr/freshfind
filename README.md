@@ -1,6 +1,6 @@
 # FreshFind
 
-A modern React-based local market discovery platform designed to help users discover fresh-produce markets, explore available produce, check market opening status, find nearby markets, and get directions.
+FreshFind is a modern React-based local market discovery platform that helps users discover fresh-produce markets, explore available produce, check market opening status, find nearby markets, and get directions.
 
 ## Live Demo
 
@@ -10,44 +10,148 @@ https://freshfind-alpha.vercel.app
 
 https://github.com/vincentlawrencesnr/freshfind
 
+---
+
 ## About the Project
 
-FreshFind is a frontend web application built around the idea of making local fresh-produce markets easier to discover and explore.
+FreshFind was built to make discovering local fresh-produce markets easier and more convenient.
 
-Users can browse local markets, filter markets by area, opening day, and available produce, check whether a market is currently open, use browser geolocation to find markets based on distance, and open individual markets in Google Maps.
+Users can browse markets, filter and sort the market directory, explore available produce, check whether a market is currently open, use their browser location to calculate distances to markets, and open market locations in Google Maps.
 
-The project was built with a focus on responsive design, reusable React components, accessibility, client-side routing, and practical browser APIs.
+The project was developed with a focus on:
+
+* Reusable React components
+* Responsive web design
+* Client-side routing
+* Accessibility
+* Browser APIs
+* Local data management
+* Practical user interactions
+* Clean and maintainable frontend architecture
+
+---
 
 ## Features
 
-* Responsive navigation with mobile menu
-* Hero section and quick market discovery
+### Market Discovery
+
+* Hero section with market discovery call-to-action
 * Featured markets
 * Seasonal produce picks
 * Market directory
-* Market filtering by:
-
-  * Area
-  * Opening day
-  * Produce
-* Market sorting by name and area
-* Real-time market opening status
-* Real-time clock
-* Browser geolocation
-* Distance calculation from the user's location
-* Google Maps directions
 * Individual market detail pages
-* Produce guide
-* Contact page
-* About page
-* Chatbot
-* Cross-page chatbot launcher
-* Visitor counter
-* Dummy login and signup
-* Bookmarks
-* Responsive footer
-* Custom FreshFind favicon
-* Accessible navigation and interactive controls
+
+### Market Directory
+
+Users can filter markets by:
+
+* Area
+* Opening day
+* Available produce
+
+Markets can also be sorted by:
+
+* Name
+* Area
+
+The directory displays the number of markets matching the current filters.
+
+### Market Status
+
+FreshFind calculates market status from the configured weekly schedule and the current date and time.
+
+The interface can display statuses such as:
+
+* Open now
+* Closed
+* Opening soon
+* Closed today
+
+### Real-Time Clock
+
+FreshFind uses the browser's current date and time to provide time-sensitive market information.
+
+### Geolocation
+
+Users can optionally allow browser location access.
+
+When permission is granted, FreshFind:
+
+1. Gets the user's current coordinates.
+2. Compares them with each market's coordinates.
+3. Calculates the distance to each market.
+4. Displays the distance in the market directory.
+5. Sorts the results by distance.
+
+Location access is optional, and users can continue using the application without granting permission.
+
+### Google Maps
+
+Each market contains latitude and longitude coordinates.
+
+FreshFind uses these coordinates to generate Google Maps links so users can open a market location directly in Google Maps.
+
+### Produce Guide
+
+Users can explore available produce and discover markets associated with different produce items.
+
+### Bookmarks
+
+Users can bookmark markets for easier access later.
+
+Bookmarks are handled on the client side using browser storage.
+
+### Authentication Demo
+
+FreshFind includes a dummy login and signup experience for demonstration purposes.
+
+The authentication system is intentionally client-side and is not connected to a production authentication service or database.
+
+### Chatbot
+
+FreshFind includes a chatbot interface for interacting with the application.
+
+The project also includes a cross-page chatbot launcher so users can access the chatbot from different parts of the application.
+
+### Contact and About Pages
+
+The application includes dedicated pages explaining the project and providing a contact interface.
+
+### Responsive Navigation
+
+The navigation system includes:
+
+* Desktop navigation
+* Mobile hamburger menu
+* Active route indicators
+* Login/logout state
+* Market discovery CTA
+
+### Accessibility
+
+The application includes accessibility-focused features such as:
+
+* Semantic HTML
+* Descriptive labels
+* Accessible form controls
+* `aria-label` attributes where appropriate
+* Keyboard-focus states
+* Meaningful image `alt` text
+* Accessible navigation controls
+
+### Scroll Restoration
+
+FreshFind includes a `ScrollToTop` component that resets the page position when users navigate between routes.
+
+### Responsive Footer
+
+The application includes a responsive footer with supporting navigation and project information.
+
+### Custom Favicon
+
+FreshFind includes a custom favicon for browser tabs and bookmarks.
+
+---
 
 ## Technologies Used
 
@@ -56,84 +160,130 @@ The project was built with a focus on responsive design, reusable React componen
 * HTML5
 * CSS3
 * React Router
-* Bootstrap Icons
 * Vite
+* Bootstrap Icons
 * Browser Geolocation API
 * Local Storage
 * Google Maps links
 * JSON-based local data
 
+---
+
 ## Project Structure
 
 ```text
-src/
-├── components/
-├── data/
-├── pages/
-├── utils/
-├── App.jsx
-├── main.jsx
-└── ...
-
-public/
-├── images/
-└── favicon.svg
+freshfind/
+├── public/
+│   ├── images/
+│   └── favicon.svg
+│
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── pages/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── vercel.json
+└── vite.config.js
 ```
+
+The project follows a component-based React architecture.
+
+Reusable interface elements are organized inside `components`, page-level views are organized inside `pages`, local application data is stored inside `data`, and reusable application logic is placed inside `utils`.
+
+---
 
 ## Market Data
 
-Market information is currently stored locally in JSON data.
+Market information is currently stored locally in JSON.
 
-Each market contains information such as:
+Each market can contain:
 
-* Market name
-* Area
-* Address
-* Description
-* Image
-* Coordinates
-* Opening schedule
-* Available produce
+```text
+Market name
+Area
+Address
+Description
+Image
+Coordinates
+Opening schedule
+Available produce
+```
 
-This structure allows the application to calculate market status, distance, filtering, sorting, and map links from the same data source.
+This allows multiple features to use the same data source.
+
+For example, the market coordinates are used for both:
+
+* Distance calculations
+* Google Maps links
+
+The schedule is used for market opening-status calculations.
+
+The produce data is used by the market filtering system and produce guide.
+
+---
 
 ## Geolocation
 
 FreshFind uses the browser's Geolocation API to request the user's current position.
 
-When permission is granted, the application calculates the distance between the user and each market and displays the distance in the market directory.
+When permission is granted, the application calculates the distance between the user's location and each market.
 
-Location access is optional. Users can continue browsing the market directory without granting location permission.
+The user can then see how far each market is from their current position.
 
-## Market Status
+Location permission is not required to use the rest of the application.
 
-Market opening status is calculated from the market's configured weekly schedule and the current browser date and time.
+---
 
-Markets can display statuses such as:
+## Market Status Logic
 
-* Open now
-* Closed
-* Opening soon
-* Closed today
+Market status is calculated from the current browser date and time and the market's weekly schedule.
 
-## Google Maps
+The application checks the current day and compares the current time with the configured opening and closing times.
 
-Each market contains latitude and longitude coordinates.
+This allows the interface to provide time-sensitive market information without requiring a backend service.
 
-FreshFind uses these coordinates to generate Google Maps links, allowing users to open a market location directly in Google Maps.
+---
 
-## Authentication
+## Client-Side Storage
 
-FreshFind currently uses a dummy client-side authentication flow for demonstration purposes.
+FreshFind uses browser `localStorage` for selected client-side features, including demonstration authentication and bookmarks.
 
-Login information is stored in the browser's local storage and is not connected to a production authentication service or database.
+This is suitable for demonstrating frontend functionality but should not be considered production-grade authentication or persistent user storage.
+
+---
+
+## Routing
+
+FreshFind uses React Router for client-side navigation.
+
+Routes allow users to navigate between:
+
+* Home
+* Markets
+* Individual market pages
+* Produce Guide
+* About
+* Contact
+* Chatbot
+* Authentication
+* Bookmarks
+
+The project also includes a Vercel rewrite configuration so direct navigation and page refreshes work correctly with the React Router application.
+
+---
 
 ## Installation
 
 Clone the repository:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/vincentlawrencesnr/freshfind.git
 ```
 
 Move into the project directory:
@@ -154,41 +304,65 @@ Start the development server:
 npm run dev
 ```
 
-Open the local development URL provided by Vite.
+Open the local URL provided by Vite.
+
+---
 
 ## Production Build
 
-To create a production build:
+Create a production build:
 
 ```bash
 npm run build
 ```
 
-To preview the production build locally:
+Preview the production build locally:
 
 ```bash
 npm run preview
 ```
+
+---
+
+## Deployment
+
+FreshFind is deployed using Vercel.
+
+The production application is available at:
+
+https://freshfind-alpha.vercel.app
+
+The GitHub repository is connected to Vercel so new commits can trigger a new deployment.
+
+---
 
 ## Future Improvements
 
 Possible future improvements include:
 
 * Real backend API
-* Real user authentication
-* Database-backed market data
+* Production authentication
+* Database-backed market information
 * Market owner accounts
 * Admin dashboard
 * User reviews and ratings
 * Real market submissions
-* Push notifications
 * Advanced map integration
 * Production chatbot integration
-* Real visitor analytics
+* Real analytics
+* Push notifications
+
+---
 
 ## Project Purpose
 
-FreshFind was developed as a practical frontend application to demonstrate modern React development, component-based architecture, responsive UI design, browser APIs, client-side routing, local data handling, and user-focused functionality.
+FreshFind was developed as a practical React application demonstrating modern frontend development concepts.
+
+The project combines component-based architecture, responsive design, client-side routing, browser APIs, local data management, accessibility, and interactive user experiences into a single application.
+
+It was also designed as a practical portfolio project rather than simply a collection of isolated React exercises.
+
+---
 
 ## Author
 
@@ -196,6 +370,4 @@ FreshFind was developed as a practical frontend application to demonstrate moder
 
 Software Engineer
 
----
-
-Built with React and a focus on creating practical, accessible, and user-friendly web experiences.
+FreshFind was built with React and a focus on creating practical, accessible, and user-friendly web experiences.
