@@ -4,11 +4,11 @@ A modern React-based local market discovery platform designed to help users disc
 
 ## Live Demo
 
-Coming soon — deployed with Vercel.
+https://freshfind-alpha.vercel.app
 
 ## GitHub Repository
 
-Coming soon.
+https://github.com/vincentlawrencesnr/freshfind
 
 ## About the Project
 
