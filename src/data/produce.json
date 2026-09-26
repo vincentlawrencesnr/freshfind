@@ -1,0 +1,130 @@
+[
+  {
+    "id": "tomatoes",
+    "name": "Tomatoes",
+    "category": "Vegetables",
+    "description": "A versatile fresh produce staple commonly used in sauces, stews, salads, and everyday cooking.",
+    "season": "Year-round",
+    "image": "/images/produce/tomatoes.jpg"
+  },
+  {
+    "id": "plantain",
+    "name": "Plantain",
+    "category": "Fruits",
+    "description": "A popular tropical staple that can be fried, boiled, roasted, or used in a variety of local dishes.",
+    "season": "Year-round",
+    "image": "/images/produce/plantain.jpg"
+  },
+  {
+    "id": "peppers",
+    "name": "Peppers",
+    "category": "Vegetables",
+    "description": "Fresh peppers that add flavor, aroma, and heat to a wide range of meals.",
+    "season": "Year-round",
+    "image": "/images/produce/peppers.jpg"
+  },
+  {
+    "id": "spinach",
+    "name": "Spinach",
+    "category": "Vegetables",
+    "description": "A leafy green vegetable commonly used in soups, stews, sauces, and healthy meals.",
+    "season": "Year-round",
+    "image": "/images/produce/spinach.jpg"
+  },
+  {
+    "id": "pineapple",
+    "name": "Pineapple",
+    "category": "Fruits",
+    "description": "A sweet and juicy tropical fruit enjoyed fresh, blended, or added to fruit dishes.",
+    "season": "Year-round",
+    "image": "/images/produce/pineapple.jpg"
+  },
+  {
+    "id": "carrots",
+    "name": "Carrots",
+    "category": "Vegetables",
+    "description": "A crisp root vegetable commonly used in salads, soups, stews, and other meals.",
+    "season": "Year-round",
+    "image": "/images/produce/carrots.jpg"
+  },
+  {
+    "id": "lettuce",
+    "name": "Lettuce",
+    "category": "Vegetables",
+    "description": "A fresh leafy vegetable commonly used in salads, sandwiches, and wraps.",
+    "season": "Year-round",
+    "image": "/images/produce/lettuce.jpg"
+  },
+  {
+    "id": "mango",
+    "name": "Mango",
+    "category": "Fruits",
+    "description": "A sweet tropical fruit enjoyed fresh and commonly used in juices, smoothies, and desserts.",
+    "season": "March - July",
+    "image": "/images/produce/mango.jpg"
+  },
+  {
+    "id": "basil",
+    "name": "Basil",
+    "category": "Herbs",
+    "description": "An aromatic herb used to add fresh flavor to sauces, salads, soups, and other dishes.",
+    "season": "Year-round",
+    "image": "/images/produce/basil.jpg"
+  },
+  {
+    "id": "okra",
+    "name": "Okra",
+    "category": "Vegetables",
+    "description": "A green vegetable commonly used in soups and stews for its distinctive texture and flavor.",
+    "season": "Year-round",
+    "image": "/images/produce/okra.jpg"
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "category": "Fruits",
+    "description": "A soft and naturally sweet tropical fruit commonly eaten fresh or used in cooking and baking.",
+    "season": "Year-round",
+    "image": "/images/produce/banana.jpg"
+  },
+  {
+    "id": "ginger",
+    "name": "Ginger",
+    "category": "Herbs",
+    "description": "An aromatic root used to add warmth and flavor to meals, drinks, and traditional preparations.",
+    "season": "Year-round",
+    "image": "/images/produce/ginger.jpg"
+  },
+  {
+    "id": "watermelon",
+    "name": "Watermelon",
+    "category": "Fruits",
+    "description": "A refreshing fruit with high water content, commonly enjoyed fresh or as a chilled drink.",
+    "season": "November - March",
+    "image": "/images/produce/watermelon.jpg"
+  },
+  {
+    "id": "cucumber",
+    "name": "Cucumber",
+    "category": "Vegetables",
+    "description": "A crisp, refreshing vegetable commonly used in salads, sandwiches, and fresh dishes.",
+    "season": "Year-round",
+    "image": "/images/produce/cucumber.jpg"
+  },
+  {
+    "id": "mint",
+    "name": "Mint",
+    "category": "Herbs",
+    "description": "A fragrant herb used in drinks, salads, sauces, and other fresh preparations.",
+    "season": "Year-round",
+    "image": "/images/produce/mint.jpg"
+  },
+  {
+    "id": "coconut",
+    "name": "Coconut",
+    "category": "Fruits",
+    "description": "A tropical fruit valued for its refreshing water and versatile flesh, which is used in cooking and drinks.",
+    "season": "Year-round",
+    "image": "/images/produce/coconut.jpg"
+  }
+]

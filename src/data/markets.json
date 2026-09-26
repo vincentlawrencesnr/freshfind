@@ -1,0 +1,309 @@
+[
+  {
+    "id": "fresh-fields-lekki",
+    "name": "Fresh Fields Market",
+    "area": "Lekki",
+    "address": "Admiralty Way, Lekki Phase 1, Lagos",
+    "description": "A vibrant community market offering fresh produce and seasonal favorites from local growers.",
+    "image": "/images/markets/fresh-fields.jpg",
+    "coordinates": {
+      "latitude": 6.4474,
+      "longitude": 3.4722
+    },
+    "schedule": [
+      {
+        "day": "Saturday",
+        "open": "08:00",
+        "close": "16:00"
+      }
+    ],
+    "produce": [
+      "Tomatoes",
+      "Plantain",
+      "Peppers",
+      "Spinach",
+      "Pineapple"
+    ]
+  },
+  {
+    "id": "harvest-square-ikeja",
+    "name": "Harvest Square Market",
+    "area": "Ikeja",
+    "address": "Allen Avenue, Ikeja, Lagos",
+    "description": "A neighborhood market connecting residents with fresh vegetables, fruits, herbs, and locally produced foods.",
+    "image": "/images/markets/harvest-square.jpg",
+    "coordinates": {
+      "latitude": 6.6018,
+      "longitude": 3.3515
+    },
+    "schedule": [
+      {
+        "day": "Wednesday",
+        "open": "09:00",
+        "close": "17:00"
+      },
+      {
+        "day": "Saturday",
+        "open": "08:00",
+        "close": "17:00"
+      }
+    ],
+    "produce": [
+      "Carrots",
+      "Tomatoes",
+      "Lettuce",
+      "Mango",
+      "Basil"
+    ]
+  },
+  {
+    "id": "green-basket-yaba",
+    "name": "Green Basket Market",
+    "area": "Yaba",
+    "address": "Herbert Macaulay Way, Yaba, Lagos",
+    "description": "A convenient local market featuring fresh vegetables, fruits, herbs, and seasonal produce.",
+    "image": "/images/markets/green-basket.jpg",
+    "coordinates": {
+      "latitude": 6.5074,
+      "longitude": 3.3711
+    },
+    "schedule": [
+      {
+        "day": "Tuesday",
+        "open": "09:00",
+        "close": "16:00"
+      },
+      {
+        "day": "Saturday",
+        "open": "09:00",
+        "close": "16:00"
+      }
+    ],
+    "produce": [
+      "Okra",
+      "Peppers",
+      "Spinach",
+      "Banana",
+      "Ginger"
+    ]
+  },
+  {
+    "id": "sunrise-produce-surulere",
+    "name": "Sunrise Produce Market",
+    "area": "Surulere",
+    "address": "Adeniran Ogunsanya Street, Surulere, Lagos",
+    "description": "A friendly neighborhood market known for fresh fruits, vegetables, and locally sourced produce.",
+    "image": "/images/markets/sunrise-produce.jpg",
+    "coordinates": {
+      "latitude": 6.5008,
+      "longitude": 3.3481
+    },
+    "schedule": [
+      {
+        "day": "Friday",
+        "open": "08:00",
+        "close": "16:00"
+      },
+      {
+        "day": "Sunday",
+        "open": "09:00",
+        "close": "15:00"
+      }
+    ],
+    "produce": [
+      "Watermelon",
+      "Tomatoes",
+      "Cucumber",
+      "Plantain",
+      "Mint"
+    ]
+  },
+  {
+    "id": "seasonal-harvest-victoria-island",
+    "name": "Seasonal Harvest Market",
+    "area": "Victoria Island",
+    "address": "Ahmadu Bello Way, Victoria Island, Lagos",
+    "description": "A seasonal market bringing together fresh produce, herbs, fruits, and specialty local products.",
+    "image": "/images/markets/seasonal-harvest.jpg",
+    "coordinates": {
+      "latitude": 6.4281,
+      "longitude": 3.4219
+    },
+    "schedule": [
+      {
+        "day": "Saturday",
+        "open": "08:00",
+        "close": "15:00"
+      },
+      {
+        "day": "Sunday",
+        "open": "08:00",
+        "close": "15:00"
+      }
+    ],
+    "produce": [
+      "Pineapple",
+      "Mango",
+      "Coconut",
+      "Basil",
+      "Tomatoes"
+    ]
+  },
+  {
+    "id": "lagos-island-fresh-market",
+    "name": "Lagos Island Fresh Market",
+    "area": "Lagos Island",
+    "address": "Broad Street, Lagos Island, Lagos",
+    "description": "A lively urban market featuring fresh fruits, vegetables, herbs, and everyday produce from local suppliers.",
+    "image": "/images/markets/lagos-island-fresh.jpg",
+    "coordinates": {
+      "latitude": 6.4549,
+      "longitude": 3.3947
+    },
+    "schedule": [
+      {
+        "day": "Tuesday",
+        "open": "08:00",
+        "close": "17:00"
+      },
+      {
+        "day": "Saturday",
+        "open": "08:00",
+        "close": "17:00"
+      }
+    ],
+    "produce": [
+      "Tomatoes",
+      "Plantain",
+      "Banana",
+      "Peppers",
+      "Ginger"
+    ]
+  },
+  {
+    "id": "palm-grove-fresh-market",
+    "name": "Palm Grove Fresh Market",
+    "area": "Ilupeju",
+    "address": "Town Planning Way, Ilupeju, Lagos",
+    "description": "A neighborhood produce market offering fresh vegetables, fruits, herbs, and locally sourced seasonal produce.",
+    "image": "/images/markets/palm-grove-fresh.jpg",
+    "coordinates": {
+      "latitude": 6.5431,
+      "longitude": 3.3675
+    },
+    "schedule": [
+      {
+        "day": "Wednesday",
+        "open": "08:00",
+        "close": "16:00"
+      },
+      {
+        "day": "Saturday",
+        "open": "08:00",
+        "close": "16:00"
+      }
+    ],
+    "produce": [
+      "Carrots",
+      "Spinach",
+      "Cucumber",
+      "Pineapple",
+      "Mint"
+    ]
+  },
+  {
+    "id": "green-harvest-maryland",
+    "name": "Green Harvest Market",
+    "area": "Maryland",
+    "address": "Mobolaji Bank Anthony Way, Maryland, Lagos",
+    "description": "A convenient fresh produce market featuring vegetables, fruits, herbs, and seasonal favorites for local residents.",
+    "image": "/images/markets/green-harvest.jpg",
+    "coordinates": {
+      "latitude": 6.5767,
+      "longitude": 3.3614
+    },
+    "schedule": [
+      {
+        "day": "Thursday",
+        "open": "09:00",
+        "close": "17:00"
+      },
+      {
+        "day": "Saturday",
+        "open": "08:00",
+        "close": "17:00"
+      }
+    ],
+    "produce": [
+      "Lettuce",
+      "Tomatoes",
+      "Mango",
+      "Basil",
+      "Okra"
+    ]
+  },
+  {
+    "id": "lakeside-produce-ajah",
+    "name": "Lakeside Produce Market",
+    "area": "Ajah",
+    "address": "Ajah Roundabout, Ajah, Lagos",
+    "description": "A growing community market offering fresh fruits, vegetables, herbs, and locally sourced produce.",
+    "image": "/images/markets/lakeside-produce.jpg",
+    "coordinates": {
+      "latitude": 6.4698,
+      "longitude": 3.5852
+    },
+    "schedule": [
+      {
+        "day": "Friday",
+        "open": "08:00",
+        "close": "16:00"
+      },
+      {
+        "day": "Sunday",
+        "open": "08:00",
+        "close": "15:00"
+      }
+    ],
+    "produce": [
+      "Watermelon",
+      "Pineapple",
+      "Coconut",
+      "Plantain",
+      "Peppers"
+    ]
+  },
+  {
+    "id": "community-fresh-gbagada",
+    "name": "Community Fresh Market",
+    "area": "Gbagada",
+    "address": "Gbagada Expressway, Gbagada, Lagos",
+    "description": "A friendly neighborhood market connecting shoppers with fresh vegetables, fruits, herbs, and seasonal produce.",
+    "image": "/images/markets/community-fresh.jpg",
+    "coordinates": {
+      "latitude": 6.5577,
+      "longitude": 3.3910
+    },
+    "schedule": [
+      {
+        "day": "Monday",
+        "open": "09:00",
+        "close": "16:00"
+      },
+      {
+        "day": "Saturday",
+        "open": "08:00",
+        "close": "16:00"
+      }
+    ],
+    "produce": [
+      "Okra",
+      "Tomatoes",
+      "Banana",
+      "Ginger",
+      "Cucumber"
+    ]
+  }
+
+
+]

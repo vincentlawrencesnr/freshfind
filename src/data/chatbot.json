@@ -1,0 +1,16 @@
+[
+  {
+    "id": "faq-001",
+    "question": "Which markets are open on Saturday?",
+    "keywords": [
+      "saturday",
+      "open",
+      "market"
+    ],
+    "answer": "Several FreshFind markets operate on Saturdays.",
+    "action": {
+      "type": "market-search",
+      "day": "saturday"
+    }
+  }
+]

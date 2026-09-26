@@ -1,0 +1,201 @@
+.auth {
+  min-height: calc(100vh - 80px);
+  padding: 4.5rem 0 5rem;
+  background-color: var(--color-background);
+}
+
+.auth__container {
+  width: min(100% - 2rem, 520px);
+  margin: 0 auto;
+}
+
+.auth__card {
+  padding: 2.5rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.auth__header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.auth__eyebrow {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.auth__header h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 5vw, 2.5rem);
+  line-height: var(--line-height-tight);
+}
+
+.auth__header p {
+  max-width: 420px;
+  margin: 0.85rem auto 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.auth__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.auth__field label {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.auth__field input {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.7rem 0.85rem;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-size: var(--font-size-sm);
+  outline: none;
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.auth__field input:hover {
+  border-color: var(--color-primary);
+}
+
+.auth__field input:focus {
+  border-color: var(--color-primary);
+  box-shadow:
+    0 0 0 3px
+    color-mix(
+      in srgb,
+      var(--color-primary) 15%,
+      transparent
+    );
+}
+
+.auth__message {
+  margin: -0.25rem 0 0;
+  padding: 0.75rem 0.85rem;
+  background-color: var(--color-background);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+
+.auth__submit {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 0.25rem;
+  padding: 0.7rem 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.auth__submit:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.auth__submit:focus-visible {
+  outline: 3px solid
+    color-mix(
+      in srgb,
+      var(--color-primary) 25%,
+      transparent
+    );
+  outline-offset: 2px;
+}
+
+.auth__switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 1.75rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.auth__switch button {
+  padding: 0;
+  background: transparent;
+  color: var(--color-primary);
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth__switch button:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.auth__switch button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (max-width: 600px) {
+  .auth {
+    min-height: auto;
+    padding: 3rem 0 4rem;
+  }
+
+  .auth__container {
+    width: min(100% - 1.5rem, 520px);
+  }
+
+  .auth__card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .auth__header {
+    margin-bottom: 1.75rem;
+  }
+
+  .auth__header h1 {
+    font-size: 2rem;
+  }
+
+  .auth__switch {
+    flex-wrap: wrap;
+  }
+}

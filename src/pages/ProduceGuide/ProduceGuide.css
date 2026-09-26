@@ -1,0 +1,211 @@
+.produce-guide {
+  padding: 4rem 1.5rem;
+}
+
+.produce-guide__container {
+  width: min(100%, var(--container-width));
+  margin: 0 auto;
+}
+
+.produce-guide__header {
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.produce-guide__eyebrow {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.produce-guide__header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: var(--line-height-tight);
+}
+
+.produce-guide__header p {
+  margin: 1rem 0 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-normal);
+}
+
+/* Category filters */
+
+.produce-guide__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.produce-guide__filter {
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.produce-guide__filter:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.produce-guide__filter--active {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+/* Produce grid */
+
+.produce-guide__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* Produce card */
+
+.produce-card {
+  overflow: hidden;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.produce-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Produce image */
+
+.produce-card__image {
+  height: 220px;
+}
+
+.produce-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Produce content */
+
+.produce-card__content {
+  padding: 1.25rem;
+}
+
+.produce-card__category {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.produce-card__content h2 {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-tight);
+}
+
+.produce-card__content p {
+  margin: 0.75rem 0 1rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+
+/* Season */
+
+.produce-card__season {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.produce-card__season i {
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+/* Available markets */
+
+.produce-card__markets {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.produce-card__markets-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.produce-card__market-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.produce-card__market-list a {
+  display: inline-flex;
+  padding: 0.4rem 0.65rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.produce-card__market-list a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .produce-guide__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .produce-guide {
+    padding: 3rem 1rem;
+  }
+
+  .produce-guide__header h1 {
+    font-size: 2rem;
+  }
+
+  .produce-guide__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .produce-card__image {
+    height: 200px;
+  }
+}

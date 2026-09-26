@@ -1,0 +1,364 @@
+.market-detail {
+  min-height: 100vh;
+  padding: 2rem 0 5rem;
+
+  background: var(--color-background);
+}
+
+.market-detail__container {
+  width: min(
+    calc(100% - 2rem),
+    var(--container-width)
+  );
+
+  margin: 0 auto;
+}
+
+.market-detail__breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  margin-bottom: 2rem;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.9rem;
+}
+
+.market-detail__breadcrumb a {
+  color: var(--color-primary);
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: color var(--transition-fast);
+}
+
+.market-detail__breadcrumb a:hover {
+  color: var(--color-primary-dark);
+}
+
+.market-detail__breadcrumb i {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+.market-detail__breadcrumb span {
+  color: var(--color-text-muted);
+}
+
+.market-detail__hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+
+  margin-bottom: 4rem;
+  padding: 1.5rem;
+
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+}
+
+
+.market-detail__hero-image {
+  height: 430px;
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+}
+
+.market-detail__hero-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform var(--transition-normal);
+}
+
+.market-detail__hero:hover
+.market-detail__hero-image img {
+  transform: scale(1.02);
+}
+
+.market-detail__hero-content {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.market-detail__area {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.market-detail__hero-content h1 {
+  margin: 0 0 1rem;
+
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.market-detail__description {
+  max-width: 600px;
+  margin: 0 0 1.5rem;
+
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.market-detail__location {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.market-detail__location i {
+  flex-shrink: 0;
+
+  margin-top: 0.15rem;
+
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.market-detail__bookmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.75rem 1.15rem;
+
+  color: var(--color-primary);
+  background: transparent;
+
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+
+  font-family: var(--font-body);
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.market-detail__bookmark:hover {
+  color: var(--color-surface);
+  background: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .market-detail__hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .market-detail__hero-image {
+    height: 360px;
+  }
+
+  .market-detail__hero-content {
+    padding: 0 0 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .market-detail {
+    padding-top: 1.5rem;
+  }
+
+  .market-detail__hero {
+    margin-bottom: 3rem;
+    padding: 1rem;
+
+    border-radius: var(--radius-md);
+  }
+
+  .market-detail__hero-image {
+    height: 260px;
+
+    border-radius: var(--radius-sm);
+  }
+
+  .market-detail__hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .market-detail__description {
+    font-size: 0.95rem;
+  }
+}
+
+.market-detail__info {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 1.5rem;
+
+  margin-bottom: 4rem;
+}
+
+.market-detail__location-card,
+.market-detail__schedule-card {
+  padding: 1.75rem;
+
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  box-shadow: var(--shadow-sm);
+}
+
+.market-detail__section-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.market-detail__section-icon {
+  display: grid;
+  place-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  color: var(--color-primary);
+  background: rgba(22, 101, 52, 0.08);
+
+  border-radius: var(--radius-sm);
+}
+
+.market-detail__section-icon i {
+  font-size: 1.15rem;
+}
+
+.market-detail__eyebrow {
+  display: block;
+  margin-bottom: 0.15rem;
+
+  color: var(--color-primary);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.market-detail__section-heading h2 {
+  margin: 0;
+
+  font-size: 1.35rem;
+}
+
+.market-detail__address {
+  margin: 0 0 0.5rem;
+
+  color: var(--color-text);
+
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.market-detail__area-text {
+  margin: 0;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.95rem;
+}
+
+.market-detail__schedule {
+  border-top: 1px solid var(--color-border);
+}
+
+.market-detail__schedule-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 0.8rem 0;
+
+  border-bottom: 1px solid var(--color-border);
+
+  font-size: 0.9rem;
+}
+
+.market-detail__schedule-row span:first-child {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.market-detail__schedule-row span:last-child {
+  color: var(--color-text-muted);
+  text-align: right;
+}
+
+@media (max-width: 800px) {
+  .market-detail__info {
+    grid-template-columns: 1fr;
+  }
+}
+
+.market-detail__produce {
+  margin-top: 2rem;
+}
+
+.market-detail__produce-grid {
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.market-detail__produce-item {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  text-align: center;
+  background: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.market-detail__produce-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.75rem;
+}
+
+.market-detail__produce-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.market-detail__produce-item span {
+  font-weight: 600;
+}
